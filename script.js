@@ -21,12 +21,7 @@ $(document).ready(() => {
          backSpeed:60,
          loop:true
      });
-     var typed = new Typed(".typing-2", {
-        strings:["Desenvolvedor Front-End"],
-        typeSpeed:100,
-        backSpeed:60,
-        loop:true
-    });
+     
 
     $('.menu-btn').click(() => {
         $('.navbar .menu').toggleClass("active");
