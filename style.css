@@ -365,7 +365,7 @@ section{
 .react::before{
     width: 30%;
 }
-/*  sessão equipe  */
+/*  sessão projeto  */
 .projetos .title::after{
     content: "Portfólio";
 }
@@ -643,6 +643,7 @@ footer span a:hover{
     .home {
         background: url(none);
         background-color: #000;
+        width: 100vw;
     }
 }
 @media (max-width: 500px){
@@ -651,6 +652,10 @@ footer span a:hover{
     }
     .text-3{
         font-size: 27px;
+    }
+
+    .about .title {
+        padding: 45px 0;
     }
     
 }
