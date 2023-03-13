@@ -96,6 +96,7 @@ html{
     color:var(--cor-principal) ;
     font-weight: 500;
 }
+
 .home-content a{
     display: inline-block;
     background: var(--cor-principal);
@@ -656,4 +657,14 @@ footer span a:hover{
     .about .title {
         padding: 45px 0;
     }
+
+    .services .serv-content .card {
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .text-email {
+        font-size: 14px;
+    }
+
 }
