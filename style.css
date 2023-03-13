@@ -663,8 +663,15 @@ footer span a:hover{
         margin-bottom: 20px;
     }
 
-    .text-email {
-        font-size: 14px;
+    .info__email { width: 160px; }
+
+    .info__git {
+        width: 100px;
     }
+
+    .git__icon {
+        margin-right: 30px;
+    }
+    
 
 }
