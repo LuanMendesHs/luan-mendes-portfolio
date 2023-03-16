@@ -355,16 +355,16 @@ section{
     width: 93%;
 }
 .css::before{
-    width: 80%;
+    width: 85%;
 }
 .js::before{
     width: 60%;
 }
 .bootstrap::before{
-    width: 70%;
+    width: 80%;
 }
 .react::before{
-    width: 30%;
+    width: 45%;
 }
 /*  sessão projeto */
 .projetos .title::after{
