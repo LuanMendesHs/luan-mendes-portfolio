@@ -9,8 +9,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -78,7 +78,7 @@ html{
     font-family: var(--font-ubuntu);
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0;
 }
 .text-1{
     font-size: 27px;
@@ -476,6 +476,14 @@ section{
     font-size: 25px;
     color: var(--cor-principal);
 }
+.git__icon {
+    margin-right: 31px;
+}
+
+.git__titulo {
+    font-weight: 500;
+}
+
 .contact .rigth form .fields{
     display: flex;
 }
@@ -663,7 +671,7 @@ footer span a:hover{
         margin-bottom: 20px;
     }
 
-    .info__email { width: 160px; }
+    .info__email { width: 160px; font-size: 15px; }
 
     .info__git {
         width: 100px;
