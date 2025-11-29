@@ -279,11 +279,21 @@ section{
     color: var(--cor-principal);
 }
 
+.serv-content .card .icon-secundario{
+    height: 70px;
+    height: 70px;
+    color: var(--cor-principal);
+}
+
 .bi {
     color: var(--cor-principal);
 }
 .serv-content .card:hover ion-icon{
     color: #fff;
+}
+
+.serv-content .card:hover .icon-secundario{
+    filter: brightness(0) invert(1);
 }
 
 .card:hover .bi {
