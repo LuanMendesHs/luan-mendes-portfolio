@@ -48,3 +48,49 @@ $(document).ready(() => {
         }
     });
 });
+
+document.querySelector('.toggle-lang').addEventListener('click', function(e) {
+    e.preventDefault(); // evita o reload da página
+    document.querySelector('.language-second').classList.toggle('show');
+});
+
+document.addEventListener('click', function(e) {
+    const langBox = document.querySelector('.language');
+    const dropdown = document.querySelector('.language-second');
+
+    if (!langBox.contains(e.target)) {
+        dropdown.classList.remove('show');
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // impede o envio padrão
+
+    const firstName = document.getElementById("first-name").value.trim();
+    const lastName  = document.getElementById("last-name").value.trim();
+    const email     = document.getElementById("email").value.trim();
+    const message   = document.getElementById("message").value.trim();
+
+    // número do WhatsApp em formato internacional, sem +, espaços ou traços
+    // Exemplo: +61 434 457 000  →  61434457000
+    const phoneNumber = "61434457000";
+
+    const text = `Hello, Luan!%0A%0A` +
+                 `I came from your website.:%0A%0A` +
+                 `Name: ${firstName} ${lastName}%0A` +
+                 `Email: ${email}%0A%0A` +
+                 `Message:%0A${message}`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    // abre o WhatsApp Web / app
+    window.open(url, "_blank");
+  });
+});
+
