@@ -129,9 +129,14 @@ html {
     margin-left: -3px;
 }
 
+/* ✅ AJUSTE: trava a altura do texto do Typed para o botão não “pular” */
 .text-3 {
     font-size: 40px;
     margin: 5px 0;
+    line-height: 1.2;
+
+    /* reserva um espaço menor (reduz o “buraco”) mas ainda evita o pulo */
+    min-height: 2.2em;
 }
 
 .text-3 span {
@@ -139,13 +144,17 @@ html {
     font-weight: 500;
 }
 
+/* ✅ AJUSTE: reduz um pouco o espaçamento do botão (opcional, mas ajuda no visual) */
 .home-content a {
     display: inline-block;
     background: var(--cor-principal);
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
-    margin-top: 20px;
+
+    /* antes era 20px */
+    margin-top: 14px;
+
     border-radius: 6px;
     border: 2px solid var(--cor-principal);
 }
@@ -779,8 +788,10 @@ footer span a:hover {
         font-size: 60px;
     }
 
+    /* ✅ ajuste principal no mobile: mantém o botão estável sem criar espaço grande */
     .text-3 {
         font-size: 32px;
+        min-height: 2.6em; /* menor do que antes, ainda segura o pulo */
     }
 
     .home-content a {
@@ -827,5 +838,4 @@ footer span a:hover {
     .git__icon {
         margin-right: 30px;
     }
-
 }
