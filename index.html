@@ -2,547 +2,506 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfólio | Luan Mendes</title>
+  <title>Portfólio | Luan Mendes</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="scroll-up-btn">
-        <ion-icon name="chevron-up-outline"></ion-icon>
+  <div class="scroll-up-btn">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </div>
+
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <a href="#"><span>Port</span><span data-i18n="nav.logoSuffix">fólio</span></a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#home" data-i18n="nav.home">Início</a></li>
+        <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Especialidades</a></li>
+        <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+
+      <!-- Mantido para casar com seu CSS (dropdown) -->
+      <div class="language">
+        <div class="language-primary">
+          <a href="#" class="toggle-lang" aria-label="Change language">
+            <img id="lang-flag-main" src="image/flag-brazil.svg" alt="Bandeira do Brasil">
+            <ion-icon style="color: white; margin-left: 10px; width: 20px; height: 20px;"
+              name="caret-down-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="language-second">
+          <a href="#" id="lang-switch" data-lang="en" aria-label="Switch language">
+            <img id="lang-flag-second" src="image/flag-usa.svg" alt="USA Flag">
+          </a>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo">
-                <a href="#"><span>Port</span><span data-i18n="nav.logoSuffix">fólio</span></a>
-            </div>
-
-            <ul class="menu">
-                <li><a href="#home" data-i18n="nav.home">Início</a></li>
-                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
-                <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
-                <li><a href="#skills" data-i18n="nav.skills">Especialidades</a></li>
-                <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
-            </ul>
-
-            <div class="menu-btn">
-                <ion-icon name="menu-outline"></ion-icon>
-            </div>
-
-            <!-- Mantido para casar com seu CSS (dropdown) -->
-            <div class="language">
-
-                <div class="language-primary">
-                    <a href="#" class="toggle-lang" aria-label="Change language">
-                        <img id="lang-flag-main" src="image/flag-brazil.svg" alt="Bandeira do Brasil">
-                        <ion-icon style="color: white; margin-left: 10px; width: 20px; height: 20px;"
-                            name="caret-down-outline"></ion-icon>
-                    </a>
-                </div>
-
-                <div class="language-second">
-                    <a href="#" id="lang-switch" data-lang="en" aria-label="Switch language">
-                        <img id="lang-flag-second" src="image/flag-usa.svg" alt="USA Flag">
-                    </a>
-                </div>
-
-            </div>
+  <!--home-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-i18n="home.hello">Olá, meu nome é</div>
+        <div class="text-2">Luan Mendes</div>
+        <div class="text-3">
+          <span data-i18n="home.iAm">Eu sou</span> <span class="typing"></span>
         </div>
-    </nav>
+        <a href="https://www.linkedin.com/in/mendes-luan/" target="_blank" data-i18n="home.hire">
+          Contratar-me
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!--home-->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1" data-i18n="home.hello">Olá, meu nome é</div>
-                <div class="text-2">Luan Mendes</div>
-                <div class="text-3">
-                    <span data-i18n="home.iAm">Eu sou</span> <span class="typing"></span>
-                </div>
-                <a href="https://www.linkedin.com/in/mendes-luan/" target="_blank"
-                    data-i18n="home.hire">
-                    Contratar-me
-                </a>
-            </div>
+  <!--about-->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">
+        <span data-i18n="about.title">Sobre</span>
+        <span class="title-sub" data-i18n="about.subtitle">Quem eu sou</span>
+      </h2>
+
+      <div class="about-content">
+        <div class="column left">
+          <img src="image/sobre.jpg" alt="">
         </div>
-    </section>
 
-    <!--about-->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">
-                <span data-i18n="about.title">Sobre</span>
-                <span class="title-sub" data-i18n="about.subtitle">Quem eu sou</span>
-            </h2>
+        <div class="column right">
+          <div class="text">
+            <span data-i18n="about.imLuan">Sou Luan e sou</span> <span class="typing-2"></span>
+          </div>
 
-            <div class="about-content">
-                <div class="column left">
-                    <img src="image/sobre.jpg" alt="">
-                </div>
+          <p style="margin-bottom: 10px;" data-i18n="about.p1">
+            Eu me chamo Luan, tenho 27 anos e comecei minha jornada na programação em 2021, quando decidi
+            mudar completamente de carreira e seguir aquilo que realmente me despertava curiosidade:
+            tecnologia.
+          </p>
 
-                <div class="column right">
-                    <div class="text">
-                        <span data-i18n="about.imLuan">Sou Luan e sou</span> <span class="typing-2"></span>
-                    </div>
+          <p style="margin-bottom: 10px;" data-i18n="about.p2">
+            Comecei estudando lógica e algoritmos, e rapidamente percebi que esse universo fazia total
+            sentido pra mim. Em 2022 tive a oportunidade de estudar na Amontada Valley, onde aprimorei meus
+            conhecimentos e desenvolvi ainda mais paixão pela área. Esse caminho me levou ao meu primeiro
+            trabalho na Inovation IT, onde passei dois anos aprendendo, criando e me desenvolvendo ao lado
+            de uma equipe que fez parte importante da minha história.
+          </p>
 
-                    <p style="margin-bottom: 10px;" data-i18n="about.p1">
-                        Eu me chamo Luan, tenho 27 anos e comecei minha jornada na programação em 2021, quando decidi
-                        mudar completamente de carreira e seguir aquilo que realmente me despertava curiosidade:
-                        tecnologia.
-                    </p>
+          <p style="margin-bottom: 10px;" data-i18n="about.p3">
+            Depois dessa experiência, decidi dar um passo adiante e realizar um intercâmbio na Austrália.
+            Aqui, sigo estudando, evoluindo e criando novos projetos por conta própria — sempre buscando
+            aprender coisas novas e melhorar minhas habilidades.
+          </p>
 
-                    <p style="margin-bottom: 10px;" data-i18n="about.p2">
-                        Comecei estudando lógica e algoritmos, e rapidamente percebi que esse universo fazia total
-                        sentido pra mim. Em 2022 tive a oportunidade de estudar na Amontada Valley, onde aprimorei meus
-                        conhecimentos e desenvolvi ainda mais paixão pela área. Esse caminho me levou ao meu primeiro
-                        trabalho na Inovation IT, onde passei dois anos aprendendo, criando e me desenvolvendo ao lado
-                        de uma equipe que fez parte importante da minha história.
-                    </p>
+          <p data-i18n="about.p4">
+            Hoje, estou em busca de uma nova oportunidade para contribuir com meu trabalho, crescer
+            profissionalmente e continuar fazendo o que eu mais gosto: transformar ideias em soluções
+            através do código.
+          </p>
 
-                    <p style="margin-bottom: 10px;" data-i18n="about.p3">
-                        Depois dessa experiência, decidi dar um passo adiante e realizar um intercâmbio na Austrália.
-                        Aqui, sigo estudando, evoluindo e criando novos projetos por conta própria — sempre buscando
-                        aprender coisas novas e melhorar minhas habilidades.
-                    </p>
-
-                    <p data-i18n="about.p4">
-                        Hoje, estou em busca de uma nova oportunidade para contribuir com meu trabalho, crescer
-                        profissionalmente e continuar fazendo o que eu mais gosto: transformar ideias em soluções
-                        através do código.
-                    </p>
-
-                    <a class="btn-sobre"
-                        href="https://drive.google.com/file/d/19KbvFBBJh675DYi2bbRvbOhZBGGh0yz2/view?usp=sharing" target="_blank"
-                        data-i18n="about.resume">
-                        Visualizar CV
-                    </a>
-                </div>
-            </div>
+          <a class="btn-sobre"
+            href="https://drive.google.com/file/d/19KbvFBBJh675DYi2bbRvbOhZBGGh0yz2/view?usp=sharing" target="_blank"
+            data-i18n="about.resume">
+            Visualizar CV
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!--services-->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">
-                <span data-i18n="services.title">Serviços</span>
-                <span class="title-sub" data-i18n="services.subtitle">O que ofereço</span>
-            </h2>
+  <!--services-->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">
+        <span data-i18n="services.title">Serviços</span>
+        <span class="title-sub" data-i18n="services.subtitle">O que ofereço</span>
+      </h2>
 
-            <div class="serv-content">
-
-                <div class="card">
-                    <div class="box">
-                        <ion-icon name="logo-html5"></ion-icon>
-                        <div class="text">HTML</div>
-                        <p data-i18n="services.html">
-                            HTML é o bloco de construção mais básico da web. Define o significado e a estrutura do
-                            conteúdo da web.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <ion-icon name="logo-css3"></ion-icon>
-                        <div class="text">CSS</div>
-                        <p data-i18n="services.css">
-                            CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags
-                            HTML.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <ion-icon name="logo-javascript"></ion-icon>
-                        <div class="text">JavaScript</div>
-                        <p data-i18n="services.js">
-                            Linguagem de programação interpretada estruturada, de script em alto nível com tipagem
-                            dinâmica fraca e multiparadigma.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <ion-icon name="logo-react"></ion-icon>
-                        <div class="text">React</div>
-                        <p data-i18n="services.react">
-                            O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces
-                            de usuário em páginas web.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <ion-icon name="logo-react"></ion-icon>
-                        <div class="text">React Native</div>
-                        <p data-i18n="services.reactNative">
-                            React Native é uma biblioteca JavaScript criada pelo Facebook. É usada para desenvolver
-                            aplicativos para os sistemas Android e iOS de forma nativa.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" fill="currentColor"
-                            class="bi bi-bootstrap" viewBox="0 0 16 16">
-                            <path
-                                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
-                            <path
-                                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
-                        </svg>
-                        <div class="text">Bootstrap</div>
-                        <p data-i18n="services.bootstrap">
-                            Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de
-                            interface e front-end.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img class="icon-secundario" src="image/microsoft_power_automate.svg" alt="Logo Power Automate">
-                        <div class="text">Power Automate</div>
-                        <p data-i18n="services.powerAutomate">
-                            Power Automate é uma plataforma da Microsoft que permite automatizar tarefas e processos de
-                            negócios usando uma interface intuitiva.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img class="icon-secundario" src="image/microsoft_power_apps.svg" alt="Logo Power Apps">
-                        <div class="text">Power Apps</div>
-                        <p data-i18n="services.powerApps">
-                            Power Apps é uma plataforma da Microsoft que permite criar aplicativos de negócios
-                            personalizados conectados a várias fontes de dados.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img class="icon-secundario" src="image/microsoft_sharepoint.svg" alt="Logo SharePoint">
-                        <div class="text">SharePoint</div>
-                        <p data-i18n="services.sharepoint">
-                            SharePoint é uma plataforma colaborativa da Microsoft que permite às organizações criar
-                            sites para armazenar, organizar e compartilhar documentos e informações de forma segura.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+      <div class="serv-content">
+        <div class="card">
+          <div class="box">
+            <ion-icon name="logo-html5"></ion-icon>
+            <div class="text">HTML</div>
+            <p data-i18n="services.html">
+              HTML é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!--skills-->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">
-                <span data-i18n="skills.title">Especialidades</span>
-                <span class="title-sub" data-i18n="skills.subtitle">O que faço</span>
-            </h2>
-
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text" data-i18n="skills.leftTitle">Minhas habilidades criativas e experiências</div>
-                    <p data-i18n="skills.leftText">
-                        No momento estou em busca de novas oportunidades para aprimorar os meus conhecimentos cada vez
-                        mais. Grande parte da minha experiência foi adquirida em sala de aula e estudos em plataformas
-                        de ensino online, onde fizemos o desenvolvimento de diversos desafios que me ajudaram a adquirir
-                        bastante conhecimento para adentrar no ramo de desenvolvedor.
-                    </p>
-                </div>
-
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>93%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Bootstrap</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line bootstrap"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>React</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="line react"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>React Native</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="line reactnative"></div>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+          <div class="box">
+            <ion-icon name="logo-css3"></ion-icon>
+            <div class="text">CSS</div>
+            <p data-i18n="services.css">
+              CSS é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!--projects-->
-    <section class="projetos" id="projetos">
-        <div class="max-width">
-            <h2 class="title">
-                <span data-i18n="projects.title">Meus Projetos</span>
-                <span class="title-sub" data-i18n="projects.subtitle">Portfólio</span>
-            </h2>
-
-            <div class="carousel owl-carousel">
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://bikcraft-4738z7l60-luan-mendes-martinezs-projects.vercel.app/">
-                            <img src="image/BikeCraft.png" alt="" data-i18n-alt="projects.bikcraftAlt">
-                        </a>
-                        <div class="text">BikCraft</div>
-                        <p data-i18n="projects.bikcraftText">
-                            Site completo criado para empresa de bicicletas, com páginas de preços e informações dos
-                            produtos.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://drklinger.netlify.app/home">
-                            <img src="image/DrKlinger.png" alt="" data-i18n-alt="projects.drAlt">
-                        </a>
-                        <div class="text">Dr.Klinger</div>
-                        <p data-i18n="projects.drText">
-                            Site criado exclusivamente para dentista, totalmente responsivo e com atendimento via API
-                            Whatsapp.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://game-reconhecimento-de-voz.vercel.app/">
-                            <img src="image/game.png" alt="" data-i18n-alt="projects.gameAlt">
-                        </a>
-                        <div class="text" data-i18n="projects.gameTitle">Game</div>
-                        <p data-i18n="projects.gameText">
-                            Um jogo que faz a utilização de uma API de reconhecimento de voz para encontrar o valor correto.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://fruto-fruta-tau.vercel.app/">
-                            <img src="image/fruto.png" alt="" data-i18n-alt="projects.frutoAlt">
-                        </a>
-                        <div class="text">Fruto & Fruta</div>
-                        <p data-i18n="projects.frutoText">
-                            Um projeto realizado em Bootstrap utilizando um layout de receitas responsivo.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://organo-two-theta.vercel.app/">
-                            <img src="image/site-organo.png" alt="" data-i18n-alt="projects.organoAlt">
-                        </a>
-                        <div class="text" data-i18n="projects.organoTitle">Site Organo</div>
-                        <p data-i18n="projects.organoText">
-                            Site criado utilizando a biblioteca React, onde foi criado um formulário dinâmico para implementação de desenvolvedores.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://imobiliaria-bs.vercel.app/">
-                            <img src="image/imobiliaria.png" alt="" data-i18n-alt="projects.imobAlt">
-                        </a>
-                        <div class="text" data-i18n="projects.imobTitle">Imobiliária</div>
-                        <p data-i18n="projects.imobText">
-                            Um site pensado para uma Imobiliária, utilizando o framework Bootstrap para o seu desenvolvimento.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <a href="https://alura-books-inky.vercel.app/">
-                            <img src="image/AluraBooks.png" alt="" data-i18n-alt="projects.aluraAlt">
-                        </a>
-                        <div class="text" data-i18n="projects.aluraTitle">Alura Books</div>
-                        <p data-i18n="projects.aluraText">
-                            Um site da Alura onde são divulgados livros e conteúdos online para desenvolvimento de sistemas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="image/desenvolvimento.png" alt="" data-i18n-alt="projects.devAlt">
-                        <div class="text" data-i18n="projects.devTitle">Em Desenvolvimento</div>
-                        <p data-i18n="projects.devText">
-                            Sites que estão sendo desenvolvidos e logo mais estarão inclusos no Portfólio.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+        <div class="card">
+          <div class="box">
+            <ion-icon name="logo-javascript"></ion-icon>
+            <div class="text">JavaScript</div>
+            <p data-i18n="services.js">
+              Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!--contact-->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">
-                <span data-i18n="contact.title">Contato</span>
-                <span class="title-sub" data-i18n="contact.subtitle">Fale comigo</span>
-            </h2>
-
-            <div class="contact-content">
-
-                <div class="column left">
-                    <div class="text" data-i18n="contact.leftTitle">Fale Comigo</div>
-                    <p data-i18n="contact.leftText">
-                        Caso tenha se interessado e queira entrar em contato, encontro-me à disposição para esclarecer
-                        quaisquer dúvidas.
-                    </p>
-
-                    <div class="icons">
-
-                        <div class="row">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head" data-i18n="contact.nameLabel">Nome</div>
-                                <div class="sub-title">Luan Mendes</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head" data-i18n="contact.phoneLabel">Telefone</div>
-                                <div class="sub-title">+61 0434 457 000</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <ion-icon class="email-icon" name="person-outline"></ion-icon>
-                            <div class="info info__email">
-                                <div class="head" data-i18n="contact.emailLabel">Email</div>
-                                <div class="sub-title">
-                                    <a class="text-email"
-                                        href="mailto:familia.martinez.2009@hotmail.com">familia.martinez.2009@hotmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <ion-icon class="git__icon" name="logo-github"></ion-icon>
-                            <div class="info__git">
-                                <div class="head git__titulo">GitHub</div>
-                                <div class="sub-title">
-                                    <a class="text-email"
-                                        href="https://github.com/LuanMendesHs">github.com/LuanMendesHs</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="column rigth">
-                    <div class="text" data-i18n="contact.formTitle">Mensagem</div>
-
-                    <form id="contact-form">
-                        <div class="fields">
-                            <div class="field name">
-                                <input id="first-name" type="text" placeholder="Nome"
-                                    data-i18n-placeholder="contact.firstName" required>
-                            </div>
-                            <div class="field">
-                                <input id="last-name" type="text" placeholder="Sobrenome"
-                                    data-i18n-placeholder="contact.lastName" required>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <div class="field email">
-                                <input id="email" type="email" placeholder="Email"
-                                    data-i18n-placeholder="contact.emailPlaceholder" required>
-                            </div>
-
-                            <div class="field textarea">
-                                <textarea id="message" cols="30" rows="10" placeholder="Escrever..."
-                                    data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
-                            </div>
-
-                            <div class="button">
-                                <button type="submit" data-i18n="contact.send">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+        <div class="card">
+          <div class="box">
+            <ion-icon name="logo-react"></ion-icon>
+            <div class="text">React</div>
+            <p data-i18n="services.react">
+              O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!--footer-->
-    <footer>
-        <span data-i18n="footer.textPrefix">Desenvolvido por</span>
-        <a href="https://www.linkedin.com/in/mendes-luan/" data-i18n="footer.name">Luan Mendes</a>
-        <span> | </span>
-        <span data-i18n="footer.rights">Todos os direitos reservados 2023</span>
-    </footer>
+        <div class="card">
+          <div class="box">
+            <ion-icon name="logo-react"></ion-icon>
+            <div class="text">React Native</div>
+            <p data-i18n="services.reactNative">
+              React Native é uma biblioteca JavaScript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa.
+            </p>
+          </div>
+        </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="card">
+          <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="60" fill="currentColor"
+              class="bi bi-bootstrap" viewBox="0 0 16 16">
+              <path
+                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+              <path
+                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+            </svg>
+            <div class="text">Bootstrap</div>
+            <p data-i18n="services.bootstrap">
+              Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end.
+            </p>
+          </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <div class="card">
+          <div class="box">
+            <img class="icon-secundario" src="image/microsoft_power_automate.svg" alt="Logo Power Automate">
+            <div class="text">Power Automate</div>
+            <p data-i18n="services.powerAutomate">
+              Power Automate é uma plataforma da Microsoft que permite automatizar tarefas e processos de negócios usando uma interface intuitiva.
+            </p>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card">
+          <div class="box">
+            <img class="icon-secundario" src="image/microsoft_power_apps.svg" alt="Logo Power Apps">
+            <div class="text">Power Apps</div>
+            <p data-i18n="services.powerApps">
+              Power Apps é uma plataforma da Microsoft que permite criar aplicativos de negócios personalizados conectados a várias fontes de dados.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img class="icon-secundario" src="image/microsoft_sharepoint.svg" alt="Logo SharePoint">
+            <div class="text">SharePoint</div>
+            <p data-i18n="services.sharepoint">
+              SharePoint é uma plataforma colaborativa da Microsoft que permite às organizações criar sites para armazenar, organizar e compartilhar documentos e informações de forma segura.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--skills-->
+  <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">
+        <span data-i18n="skills.title">Especialidades</span>
+        <span class="title-sub" data-i18n="skills.subtitle">O que faço</span>
+      </h2>
+
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text" data-i18n="skills.leftTitle">Minhas habilidades criativas e experiências</div>
+          <p data-i18n="skills.leftText">
+            No momento estou em busca de novas oportunidades para aprimorar os meus conhecimentos cada vez mais. Grande parte da minha experiência foi adquirida em sala de aula e estudos em plataformas de ensino online, onde fizemos o desenvolvimento de diversos desafios que me ajudaram a adquirir bastante conhecimento para adentrar no ramo de desenvolvedor.
+          </p>
+        </div>
+
+        <div class="column right">
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span><span>93%</span>
+            </div>
+            <div class="line html"></div>
+          </div>
+
+          <div class="bars">
+            <div class="info">
+              <span>CSS</span><span>85%</span>
+            </div>
+            <div class="line css"></div>
+          </div>
+
+          <div class="bars">
+            <div class="info">
+              <span>JavaScript</span><span>70%</span>
+            </div>
+            <div class="line js"></div>
+          </div>
+
+          <div class="bars">
+            <div class="info">
+              <span>Bootstrap</span><span>80%</span>
+            </div>
+            <div class="line bootstrap"></div>
+          </div>
+
+          <div class="bars">
+            <div class="info">
+              <span>React</span><span>65%</span>
+            </div>
+            <div class="line react"></div>
+          </div>
+
+          <div class="bars">
+            <div class="info">
+              <span>React Native</span><span>85%</span>
+            </div>
+            <div class="line reactnative"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--projects-->
+  <section class="projetos" id="projetos">
+    <div class="max-width">
+      <h2 class="title">
+        <span data-i18n="projects.title">Meus Projetos</span>
+        <span class="title-sub" data-i18n="projects.subtitle">Portfólio</span>
+      </h2>
+
+      <!-- carrossel vanilla (scroll-snap) -->
+      <div class="carousel">
+        <div class="card">
+          <div class="box">
+            <a href="https://bikcraft-4738z7l60-luan-mendes-martinezs-projects.vercel.app/">
+              <img src="image/BikeCraft.png" alt="" data-i18n-alt="projects.bikcraftAlt">
+            </a>
+            <div class="text">BikCraft</div>
+            <p data-i18n="projects.bikcraftText">
+              Site completo criado para empresa de bicicletas, com páginas de preços e informações dos produtos.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <a href="https://drklinger.netlify.app/home">
+              <img src="image/DrKlinger.png" alt="" data-i18n-alt="projects.drAlt">
+            </a>
+            <div class="text">Dr.Klinger</div>
+            <p data-i18n="projects.drText">
+              Site criado exclusivamente para dentista, totalmente responsivo e com atendimento via API Whatsapp.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <a href="https://game-reconhecimento-de-voz.vercel.app/">
+              <img src="image/game.png" alt="" data-i18n-alt="projects.gameAlt">
+            </a>
+            <div class="text" data-i18n="projects.gameTitle">Game</div>
+            <p data-i18n="projects.gameText">
+              Um jogo que faz a utilização de uma API de reconhecimento de voz para encontrar o valor correto.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <a href="https://fruto-fruta-tau.vercel.app/">
+              <img src="image/fruto.png" alt="" data-i18n-alt="projects.frutoAlt">
+            </a>
+            <div class="text">Fruto & Fruta</div>
+            <p data-i18n="projects.frutoText">
+              Um projeto realizado em Bootstrap utilizando um layout de receitas responsivo.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <a href="https://organo-two-theta.vercel.app/">
+              <img src="image/site-organo.png" alt="" data-i18n-alt="projects.organoAlt">
+            </a>
+            <div class="text" data-i18n="projects.organoTitle">Site Organo</div>
+            <p data-i18n="projects.organoText">
+              Site criado utilizando a biblioteca React, onde foi criado um formulário dinâmico para implementação de desenvolvedores.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <a href="https://imobiliaria-bs.vercel.app/">
+              <img src="image/imobiliaria.png" alt="" data-i18n-alt="projects.imobAlt">
+            </a>
+            <div class="text" data-i18n="projects.imobTitle">Imobiliária</div>
+            <p data-i18n="projects.imobText">
+              Um site pensado para uma Imobiliária, utilizando o framework Bootstrap para o seu desenvolvimento.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <a href="https://alura-books-inky.vercel.app/">
+              <img src="image/AluraBooks.png" alt="" data-i18n-alt="projects.aluraAlt">
+            </a>
+            <div class="text" data-i18n="projects.aluraTitle">Alura Books</div>
+            <p data-i18n="projects.aluraText">
+              Um site da Alura onde são divulgados livros e conteúdos online para desenvolvimento de sistemas.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img src="image/desenvolvimento.png" alt="" data-i18n-alt="projects.devAlt">
+            <div class="text" data-i18n="projects.devTitle">Em Desenvolvimento</div>
+            <p data-i18n="projects.devText">
+              Sites que estão sendo desenvolvidos e logo mais estarão inclusos no Portfólio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--contact-->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">
+        <span data-i18n="contact.title">Contato</span>
+        <span class="title-sub" data-i18n="contact.subtitle">Fale comigo</span>
+      </h2>
+
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text" data-i18n="contact.leftTitle">Fale Comigo</div>
+          <p data-i18n="contact.leftText">
+            Caso tenha se interessado e queira entrar em contato, encontro-me à disposição para esclarecer quaisquer dúvidas.
+          </p>
+
+          <div class="icons">
+            <div class="row">
+              <ion-icon name="person-outline"></ion-icon>
+              <div class="info">
+                <div class="head" data-i18n="contact.nameLabel">Nome</div>
+                <div class="sub-title">Luan Mendes</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon name="call-outline"></ion-icon>
+              <div class="info">
+                <div class="head" data-i18n="contact.phoneLabel">Telefone</div>
+                <div class="sub-title">+61 0434 457 000</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon class="email-icon" name="person-outline"></ion-icon>
+              <div class="info info__email">
+                <div class="head" data-i18n="contact.emailLabel">Email</div>
+                <div class="sub-title">
+                  <a class="text-email" href="mailto:familia.martinez.2009@hotmail.com">familia.martinez.2009@hotmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <ion-icon class="git__icon" name="logo-github"></ion-icon>
+              <div class="info__git">
+                <div class="head git__titulo">GitHub</div>
+                <div class="sub-title">
+                  <a class="text-email" href="https://github.com/LuanMendesHs">github.com/LuanMendesHs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column rigth">
+          <div class="text" data-i18n="contact.formTitle">Mensagem</div>
+
+          <form id="contact-form">
+            <div class="fields">
+              <div class="field name">
+                <input id="first-name" type="text" placeholder="Nome" data-i18n-placeholder="contact.firstName" required>
+              </div>
+              <div class="field">
+                <input id="last-name" type="text" placeholder="Sobrenome" data-i18n-placeholder="contact.lastName" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field email">
+                <input id="email" type="email" placeholder="Email" data-i18n-placeholder="contact.emailPlaceholder" required>
+              </div>
+
+              <div class="field textarea">
+                <textarea id="message" cols="30" rows="10" placeholder="Escrever..." data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
+              </div>
+
+              <div class="button">
+                <button type="submit" data-i18n="contact.send">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer>
+    <span data-i18n="footer.textPrefix">Desenvolvido por</span>
+    <a href="https://www.linkedin.com/in/mendes-luan/" data-i18n="footer.name">Luan Mendes</a>
+    <span> | </span>
+    <span data-i18n="footer.rights">Todos os direitos reservados 2023</span>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
